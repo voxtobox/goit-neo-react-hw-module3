@@ -34,7 +34,7 @@ function App() {
   }, [contacts]);
 
   return (
-    <div>
+    <>
       <h1>Phonebook</h1>
       <ContactForm onSubmit={handleContactAdd} />
       {!!contacts.length && (
@@ -44,7 +44,7 @@ function App() {
         contacts={filteredContacts}
         onContactDelete={handleContactDelete}
       />
-    </div>
+    </>
   );
 }
 
